@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primera web</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <!-- Tabla -->
+    <table style="width: 500px;" >
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Hola beats</td>
+                <td>Gratis</td>
+            </tr>
+            <tr>
+                <td>Chanchito feliz</td>
+                <td>19,90$</td>
+            </tr>
+            <tr>
+                <td>Chanchito feliz muy feliz</td>
+                <td>29,90$</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td></td>
+            <td>Total: 49,80$</td>
+        </tfoot>
+    </table>
+
+    <!-- Lista NO ordenada-->
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+    </ul>
+
+    <!-- Lista ordenada-->
+    <ol>
+        <li value="50">Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <li>
+        <!-- Lista anidada, ordenada también -->
+            <ol>
+                <li style="list-style-type: lower-roman;">Sub elemento 1</li>
+                <li style="list-style-type: lower-roman;">Sub elemento 2</li>
+                <li style="list-style-type: lower-roman;">Sub elemento 3</li>
+            </ol>
+        </li>
+    </ol>
+
+    <!-- Formulario -->
+    <form action="/formulario" method="post">
+        <label for="Nombre">Nombre</label>
+        <input value="chanchito" type="text" id="Nombre" name="Nombre" placeholder="Nombre" />
+        <br>
+        <label for="Apellido">Apellido</label>
+        <input value="feliz" type="text" id="Apellido" name="Apellido" placeholder="Apellido" />
+        <br>
+        <label id="comentario">Comentario</label>
+        <textarea cols="50" rows="10" id="comentario" placeholder="ingrese comentario" name="comentario">Este es un valor por defecto</textarea>
+        <br>
+        <button type="button">Tipo botón</button>
+        <button type="reset">Tipo reset</button>
+        <button type="submit">Tipo submit</button>
+    </form>
+
+    <!-- Encabezados y sus diferentes tamaños -->
+    <h1>Mi primer heading</h1>
+    <h2>Mi segundo heading</h2>
+    <h3>Mi tercer heading</h3>
+    <h4>Mi cuarto heading</h4>
+    <h5>Mi quinto heading</h5>
+
+    <!-- Párrafos -->
+    <p>Chanchito feliz está muy feliz.</p>
+    <p>Chanchito triste está muy triste.</p>
+
+    <!-- Línea visible horizontal -->
+    <hr>
+    <h2>Chanchito felipe</h2>
+    <p>Este texto es <span style="color:blue">mucho más largo</span> y es para mostrar <br> la etiqueta de span!</p>
+    <!-- Este texto es un comentario y no va a aparecer en el explorador -->
+
+    <!-- Link -->
+    <a target="_blank" href="https://www.google.es">Ir a Google</a>
+
+    <!-- Imagen -->
+    <img src="img/icono-hoja.png" height="100" />
+    
+</body>
+</html>
